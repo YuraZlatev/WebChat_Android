@@ -1,0 +1,21 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contact_item"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item">
+
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/tvContact" android:layout_weight="1" android:textColor="#fff"
+        android:textSize="20sp" android:textStyle="bold" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@drawable/offline" android:layout_weight="9"
+        android:id="@+id/contact_status"/>
+
+</LinearLayout>

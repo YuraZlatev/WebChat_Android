@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#FFCEF8FF"
+    tools:context="com.example.yura.webchat.WebChat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:gravity="center"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:hint="Login"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:id="@+id/etName"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="25sp"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:hint="Password"
+            android:id="@+id/etPass"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="Login"
+            android:id="@+id/btnLogin"
+            android:background="@drawable/shape_button_login"
+            android:onClick="btnClick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="6">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:textAllCaps="false"
+            android:layout_gravity="bottom"
+            android:onClick="btnClick"
+            android:background="@drawable/shape_button_reg"
+            android:id="@+id/btnRegister"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

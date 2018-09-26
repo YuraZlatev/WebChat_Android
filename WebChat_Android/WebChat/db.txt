@@ -1,0 +1,5 @@
+create table Users(id int not null primary key AUTO_INCREMENT, login varchar(64), pass varchar(64), nick varchar(64) UNIQUE, status int, lastRequest timestamp)
+
+create table Messages(id int not null primary key AUTO_INCREMENT, user_id int, text varchar(256))
+
+//IP менять в проекте, openserver, файл Tools.php
